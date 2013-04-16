@@ -1,0 +1,18 @@
+{
+	"steps": [	{
+					"id": "1"
+				,	"question": "Your name: "
+				,	"defaultValue": "popo"	
+				,	"type": "value"
+				,	"key": "name"
+				,	"nextStep": "2"
+				}
+			 ,  {
+			 		"id": "1"
+				,	"question" : "Your surname: "	
+				,	"type": "value"
+				,	"key": "surname"
+				,	"nextStep": null
+			 	}
+			 ]
+}

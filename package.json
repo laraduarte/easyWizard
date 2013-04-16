@@ -1,7 +1,32 @@
-{
-  "name" : "easyWizard",
-  "version" : "0.0.1",
-  "author" : "Kronos",
-  "dependencies": {} ,
-  "engines": {">= 0.4.x <0.11.0-pre"}
+{ "name": "easyWizard"
+, "version": "0.0.1"
+, "description": "NodeJs module for console wizard creation based in json files"
+, "homepage": "http://github.com/GuillermoPena/easyWizard"
+, "keywords": ["wizard", "console", "readline" ]
+, "author":
+  { "name": "Guillermo Peña"
+  , "email": "guillermo.pena.cardano@gmail.com"
+  , "url": "http://www.google.com/profiles/guillermo.pena.cardano"
+  }
+, "engines": {
+    "node": ">=0.6.19"
+  }
+, "repository":
+  { "type": "git"
+  , "url": "git://github.com/GuillermoPena/easyWizard.git"
+  }
+, "bugs": { "web": "http://github.com/GuillermoPena/easyWizard/issues/" }
+, "directories":
+  { "doc": "./docs"
+  , "lib": "./lib"
+  , "test": "./test"
+  }
+, "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+, "dependencies": { }
+, "main": "./lib/easyWizard.js"
 }
