@@ -1,0 +1,7 @@
+{
+  "name" : "easyWizard",
+  "version" : "0.0.1",
+  "author" : "Kronos",
+  "dependencies": {} ,
+  "engines": {">= 0.4.x <0.11.0-pre"}
+}
