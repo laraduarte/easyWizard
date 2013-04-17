@@ -2,17 +2,34 @@
 	"steps": [	{
 					"id": "1"
 				,	"question": "Your name: "
-				,	"defaultValue": "popo"	
+				,	"defaultAnswer": "popo"	
+				,   "firstStep": true
 				,	"type": "value"
-				,	"key": "name"
+				,	"property": "name"
 				,	"nextStep": "2"
 				}
 			 ,  {
-			 		"id": "1"
+			 		"id": "2"
 				,	"question" : "Your surname: "	
 				,	"type": "value"
-				,	"key": "surname"
-				,	"nextStep": null
+				,	"property": "surname"
+				,	"nextStep": "3"
 			 	}
+			 ,	{
+			 		"id": "3"
+				,	"question" : "Choose: \n\n 1.- Step 4\n 2.- Exit"	
+				,	"type": "options"
+				,	"options": { 
+								"1": { "nextStep": "4" }
+							   ,"2": { "nextStep": null}
+							   }
+			 	}
+			 ,  {
+			 		"id": "4"
+				,	"question" : "Welcome to Step 4. Say anything: "	
+				,	"type": "value"
+				,	"property": "anything"
+				,	"nextStep": null
+			    }
 			 ]
 }
