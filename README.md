@@ -1,7 +1,14 @@
 
 # easyWizard
 
- easyWizard is a utility module wich provides easy way to build console wizards using a simple JSON property file, and collecting user answers to JSON object that you can use.
+easyWizard is a utility module wich provides easy way to build console wizards using a simple JSON property file, and collecting user answers to JSON object that you can use.
+
+## How Install
+
+Easy again: 
+
+	npm install easywizard
+
 
 ## Quick Example
 
@@ -14,7 +21,7 @@
 				,   "firstStep": true
 				,	"type": "string"
 				,	"property": "name"
-				,	"nextStep": "2"
+				,	"nextStep": "2"git
 				,	"clearScreen": true
 				}
 			 ,  {
