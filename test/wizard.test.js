@@ -25,4 +25,10 @@ var ew = new EasyWizard()
 
 var file1 = "../examples/basic.wizard"
 ew.emitter.once('end', function() { console.log("\nResult:\n" +  util.inspect(ew.getObject())) })
+ew.emitter.once('paused', function() {
+	var o = ew.getObject()
+	console.log("Adding 10 years to the age")
+	o.age = parseInt(o.age) + 10
+	ew.emitter.emit('continue')
+})
 ew.run(file1)

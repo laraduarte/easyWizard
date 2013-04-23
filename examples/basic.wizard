@@ -4,32 +4,35 @@
 				,	"question": "Your name: "
 				,	"defaultAnswer": "popo"	
 				,   "firstStep": true
-				,	"type": "value"
+				,	"type": "string"
 				,	"property": "name"
 				,	"nextStep": "2"
+				,	"clearScreen": true
 				}
 			 ,  {
 			 		"id": "2"
 				,	"question" : "Your surname: "	
-				,	"type": "value"
+				,	"type": "string"
 				,	"property": "surname"
 				,	"nextStep": "3"
 			 	}
-			 ,	{
+			, 	{
 			 		"id": "3"
-				,	"question" : "Choose: \n\n 1.- Step 4\n 2.- Exit"	
+				,	"question" : "Age: "	
+				,	"type": "numeric"
+				,	"limits": { "min": 5, "max": 100}
+				,	"property": "age"
+				,	"nextStep": "4"
+				,	"pause": true
+			 	}
+			 ,	{
+			 		"id": "4"
+				,	"question" : "Repeat? [y,n]:"	
 				,	"type": "options"
 				,	"options": { 
-								"1": { "nextStep": "4" }
-							   ,"2": { "nextStep": null}
+								"y": { "nextStep": "1"}
+							   ,"n": { "nextStep": null}
 							   }
 			 	}
-			 ,  {
-			 		"id": "4"
-				,	"question" : "Welcome to Step 4. Say anything: "	
-				,	"type": "value"
-				,	"property": "anything"
-				,	"nextStep": null
-			    }
 			 ]
 }
