@@ -1,4 +1,3 @@
-
 # easyWizard
 
  easyWizard is a utility module wich provides easy way to build console wizards using a simple JSON property file, and collecting user answers to JSON object that you can use.
@@ -49,20 +48,20 @@
 This is a simple (but complete) JSON file to build a wizard
 Mainly, is a steps array. Each step must contais this fields:
 
-	· id: A id field. Two differents step can not contains same id value
-	· question: What do you want to ask to user?
-	· type: What type of value are you expecting? ["string", "numeric", "option"]
-	· nextStep: id of the next step. If type is option, each option can contain a own 'next step' value
-	· options: if type is option you must add this field with options that user can choose
+	- id: A id field. Two differents step can not contains same id value
+	- question: What do you want to ask to user?
+	- type: What type of value are you expecting? ["string", "numeric", "option"]
+	- nextStep: id of the next step. If type is option, each option can contain a own 'next step' value
+	- options: if type is option you must add this field with options that user can choose
 
 Then, you can add optional fields:
 
-	· defaultAnswer: if user set blank value will be default value
-	· property: name of property that resultant object will content with value that user will set
-	· clearScreen: clear screen before ask question to user
-	· firstStep: define what step will be the first. If this property never is defined, firtStep will be the first step in array
-	. limits: max and min limits value for numeric type value
-	. pause: very interesting property! If you set this to true, you will pause wizard in this step for make what you want, and when you finish, you can continue emitting event 'continue'.
+	- defaultAnswer: if user set blank value will be default value
+	- property: name of property that resultant object will content with value that user will set
+	- clearScreen: clear screen before ask question to user
+	- firstStep: define what step will be the first. If this property never is defined, firtStep will be the first step in array
+	- limits: max and min limits value for numeric type value
+	- pause: very interesting property! If you set this to true, you will pause wizard in this step for make what you want, and when you finish, you can continue emitting event 'continue'.
 
 See, the next example:
 
