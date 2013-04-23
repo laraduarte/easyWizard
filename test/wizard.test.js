@@ -19,8 +19,6 @@ var util = require("util")
 var EasyWizard = require("../lib/easyWizard.js")
 var ew = new EasyWizard()
 
-// __ Common things _______________________________________________________
-
 // __ Test 01 _____________________________________________________________o
 
 var file1 = "../examples/basic.wizard"
