@@ -48,11 +48,11 @@
 This is a simple (but complete) JSON file to build a wizard
 Mainly, is a steps array. Each step must contais this fields:
 
-	- id: A id field. Two differents step can not contains same id value
-	- question: What do you want to ask to user?
-	- type: What type of value are you expecting? ["string", "numeric", "option"]
-	- nextStep: id of the next step. If type is option, each option can contain a own 'next step' value
-	- options: if type is option you must add this field with options that user can choose
+  id: A id field. Two differents step can not contains same id value
+  question: What do you want to ask to user?
+  - type: What type of value are you expecting? ["string", "numeric", "option"]
+  - nextStep: id of the next step. If type is option, each option can contain a own 'next step' value
+  · options: if type is option you must add this field with options that user can choose
 
 Then, you can add optional fields:
 
