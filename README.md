@@ -68,6 +68,7 @@ Then, you can add optional fields:
   - clearScreen: clear screen before ask question to user
   - firstStep: define what step will be the first. If this property never is defined, firtStep will be the first step in array
   - limits: max and min limits value for numeric type value
+  - allowNulls: allow a null answer
   - pause: very interesting property! If you set this to true, you will pause wizard in this step for make what you want, and when you finish, you can continue emitting event 'continue'.
 
 See, the next example:
