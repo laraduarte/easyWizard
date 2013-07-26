@@ -79,12 +79,10 @@
 					"_": "QUERY VALIDATIONS"
 				,	"id": "1.2"
 				,	"prequestion": ""
-				,	"question": "  Choose one option [1,2,3,4]: "
+				,	"question": "  In Development. Choose one option [1,2]: "
 				,	"options": { 
 								"1": { "nextStep": "2" }
 							   ,"2": { "nextStep": "2" }
-							   ,"3": { "nextStep": "2" }
-							   ,"4": { "nextStep": "1.1.1" }
 							   }
 				,	"type": "options"
 				,	"property": "name"
@@ -96,11 +94,11 @@
 				,	"prequestion": ""
 				,	"question": "\n  What kind of 'Logic' validation do you want to create?\n\n\t1.- 'And' : two or more validations must be true\n\n\t2.- 'Or': Almost one of several validations must be true\n\n\t3.- 'Not': inverse of another validation\n\n\t  Choose one option [1,2,3]: "
 				,	"options": { 
-								"1": { "nextStep": "2" 
+								"1": { "nextStep": "4" 
 									 , "value": "and" }
-							   ,"2": { "nextStep": "2" 
+							   ,"2": { "nextStep": "4" 
 									 , "value": "or" }
-							   ,"3": { "nextStep": "2" 
+							   ,"3": { "nextStep": "4" 
 									 , "value": "not" }
 							   }
 				,	"type": "options"
@@ -127,7 +125,22 @@
 				,	"type": "string"
 				,	"property": "description"
 				,	"allowNulls": true
-				,	"nextStep": null
+				,	"nextStep": "5"
+				,   "pause": true
+			 	}
+
+			 , 	{
+			 		"_": "CONFIRMATION"
+				,	"id": "5"
+				,	"question" : "  Do you confirm validation creation? [y,n]: "	
+				,	"options": { 
+								"y": { "nextStep": null 
+									 , "value": true }
+							   ,"n": { "nextStep": null 
+									 , "value": false }
+							   }
+				,	"type": "options"
+				,	"property": "valid"
 			 	}
 
 			 ]
