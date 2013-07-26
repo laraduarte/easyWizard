@@ -27,6 +27,7 @@ Easy again:
 			 		"id": "2"
 				,	"question" : "Your surname: "	
 				,	"type": "string"
+				,   "allowNulls": true
 				,	"property": "surname"
 				,	"nextStep": "3"
 			 	}
@@ -44,8 +45,10 @@ Easy again:
 				,	"question" : "Repeat? [y,n]:"	
 				,	"type": "options"
 				,	"options": { 
-								"y": { "nextStep": "1"}
-							   ,"n": { "nextStep": null}
+								"y": { "nextStep": "1"
+							         , "value": "YES" }
+							   ,"n": { "nextStep": null
+							         , "value": "NO" }
 							   }
 			 	}
 			 ]
@@ -69,6 +72,7 @@ Then, you can add optional fields:
   - firstStep: define what step will be the first. If this property never is defined, firtStep will be the first step in array
   - limits: max and min limits value for numeric type value
   - allowNulls: allow a null answer
+  - value: in a optional question you can convert user answer in another one with a 'value' field into each option JSON object
   - pause: very interesting property! If you set this to true, you will pause wizard in this step for make what you want, and when you finish, you can continue emitting event 'continue'.
 
 See, the next example:
