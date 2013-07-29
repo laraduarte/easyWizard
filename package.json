@@ -1,5 +1,5 @@
 { "name": "easywizard"
-, "version": "0.1.2"
+, "version": "0.1.3"
 , "description": "NodeJs module for console wizard creation based in json files"
 , "homepage": "http://github.com/GuillermoPena/easyWizard"
 , "keywords": ["wizard", "console", "readline" ]
