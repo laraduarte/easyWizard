@@ -17,17 +17,17 @@ Easy again:
 					"id": "1"
 				,	"question": "Your name: "
 				,	"defaultAnswer": "popo"	
-				,   "firstStep": true
+				,   	"firstStep": true
 				,	"type": "string"
 				,	"property": "name"
 				,	"nextStep": "2"git
 				,	"clearScreen": true
 				}
-			 ,  {
+			 ,  	{
 			 		"id": "2"
 				,	"question" : "Your surname: "	
 				,	"type": "string"
-				,   "allowNulls": true
+				,   	"allowNulls": true
 				,	"property": "surname"
 				,	"nextStep": "3"
 			 	}
@@ -44,12 +44,9 @@ Easy again:
 			 		"id": "4"
 				,	"question" : "Repeat? [y,n]:"	
 				,	"type": "options"
-				,	"options": { 
-								"y": { "nextStep": "1"
-							         , "value": "YES" }
-							   ,"n": { "nextStep": null
-							         , "value": "NO" }
-							   }
+				,	"options": { "y": { "nextStep": "1" , "value": "YES" }
+						   , "n": { "nextStep": null, "value": "NO" }
+						   }
 			 	}
 			 ]
 }
@@ -102,6 +99,15 @@ ew.run(file1)
 
 This example builds a wizard with the previous wizard JSON file and when 'age' step ends, wizard is paused (event 'paused'), test is going to add 10 years to age property, and then continue wizard. 
 When wizard ends (event 'end'), resultant object is showed in console.
+
+You can use this public methods also: 
+
+  - getObject(): return a object with all info of the wizards (responses of user)
+  - resetObject(): reset object clearing all of properties
+  - getCurrentStep(): return current step id of wizard at this moment
+  - getNextStep(): return current next step id (if exists) of wizard at this moment
+  - setNextStep(stepId): force the next step
+
 
 ## Contributors
 
