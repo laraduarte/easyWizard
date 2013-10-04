@@ -20,7 +20,7 @@ Easy again:
 				,   	"firstStep": true
 				,	"type": "string"
 				,	"property": "name"
-				,	"nextStep": "2"git
+				,	"nextStep": "2"
 				,	"clearScreen": true
 				}
 			 ,  	{
