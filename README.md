@@ -17,7 +17,7 @@ Easy again:
 					"id": "1"
 				,	"question": "Your name: "
 				,	"defaultAnswer": "popo"	
-				,   	"firstStep": true
+				,	"firstStep": true
 				,	"type": "string"
 				,	"property": "name"
 				,	"nextStep": "2"
@@ -27,7 +27,7 @@ Easy again:
 			 		"id": "2"
 				,	"question" : "Your surname: "	
 				,	"type": "string"
-				,   	"allowNulls": true
+				,	"allowNulls": true
 				,	"property": "surname"
 				,	"nextStep": "3"
 			 	}
@@ -45,8 +45,8 @@ Easy again:
 				,	"question" : "Repeat? [y,n]:"	
 				,	"type": "options"
 				,	"options": { "y": { "nextStep": "1" , "value": "YES" }
-						   , "n": { "nextStep": null, "value": "NO" }
-						   }
+							, "n": { "nextStep": null, "value": "NO" }
+							}
 			 	}
 			 ]
 }
